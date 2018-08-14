@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics;
+using System.Reflection;
 using System.Windows.Forms;
 
 namespace testSqiurel
@@ -20,6 +15,16 @@ namespace testSqiurel
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            textBox1.Text += "FileVersionInfo.GetVersionInfo(assembly.Location).FileVersion " + FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FileVersion + Environment.NewLine;
+            textBox1.Text += "FileVersionInfo.GetVersionInfo(assembly.Location).ProductVersion " + FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).ProductVersion + Environment.NewLine;
+
+            
+
+
         }
     }
 }

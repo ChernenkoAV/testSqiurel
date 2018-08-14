@@ -1,5 +1,4 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // Управление общими сведениями о сборке осуществляется с помощью 
@@ -32,5 +31,8 @@ using System.Runtime.InteropServices;
 // Можно задать все значения или принять номера сборки и редакции по умолчанию 
 // используя "*", как показано ниже:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1")]
+#pragma warning disable CS7035 // Указанная строка версии не соответствует рекомендованному формату — основной номер.дополнительный номер.сборка.редакция
+[assembly: AssemblyFileVersion("4.5.6a.3-beta1")]
+#pragma warning restore CS7035 // Указанная строка версии не соответствует рекомендованному формату — основной номер.дополнительный номер.сборка.редакция
+[assembly: AssemblyInformationalVersion("0.9.2.0alfa")]
