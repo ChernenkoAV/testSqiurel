@@ -33,6 +33,6 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1")]
 #pragma warning disable CS7035 // Указанная строка версии не соответствует рекомендованному формату — основной номер.дополнительный номер.сборка.редакция
-[assembly: AssemblyFileVersion("4.5.6a.3-beta2")]
+[assembly: AssemblyFileVersion("4.5.6a.3-beta3")]
 #pragma warning restore CS7035 // Указанная строка версии не соответствует рекомендованному формату — основной номер.дополнительный номер.сборка.редакция
 [assembly: AssemblyInformationalVersion("0.9.2.0alfa")]
